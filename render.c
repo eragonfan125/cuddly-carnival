@@ -31,7 +31,7 @@ void printcol(alls *all, int col, int len) {
   for (; r >= (int)((all->rn.rows + len)/2); --r)
     mvaddch(r, col, 'W');
   for (; all->rn.rows >= 0; --r)
-    mvaddch(r, col, '.'');
+    mvaddch(r, col, '.);
 }
 
 void render2d(alls *all) {

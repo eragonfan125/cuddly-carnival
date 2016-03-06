@@ -27,18 +27,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 void printcol(alls *all, int col, int len) {
   int r = all->rn.rows;
   for (; r >= (int)((all->rn.rows - len)/2); --r)
-    mvaddch(r, col, ".");
+    mvaddch(r, col, '.');
   for (; r >= (int)((all->rn.rows + len)/2); --r)
-    mvaddch(r, col, "#");
+    mvaddch(r, col, 'W');
   for (; all->rn.rows >= 0; --r)
-    mvaddch(r, col, ".");
+    mvaddch(r, col, '.'');
 }
 
 void render2d(alls *all) {
   double r_A = all->p.p_A - all->s.p_FOV / 2;
   int i;
   for (i = 0; i < all->rn.cols; ++i) {
-    printcol(all, i, (int)(p_raylen(all, r_A) == -1 ? 0 : (all->rn.rows/p_raylen(all, r_A) == 0 ? all->rn.rows : all->rn.rows/p_raylen(all, r_A))));
+    printcol(all, i, (int)(p_raylen(all, r_A) == -1 ? 0 : (all->rn.rows / p_raylen(all, r_A) == 0 ? all->rn.rows : all->rn.rows / p_raylen(all, r_A))));
     r_A += all->s.p_FOV / all->rn.cols;
   }
 }

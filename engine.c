@@ -48,4 +48,6 @@ double p_raylen(alls *all, double r_A) {
     return -1;
 }
 
-double s_raylen(alls *all, double r_A) {}
+double s_raylen(alls *all, double r_A) {
+  return 0;
+}

@@ -33,7 +33,7 @@ typedef struct {
   int rows;
   int cols;
   int refresh;
-  int chunk[10][10];
+  int chunk[5][5];
 } rendering;
 typedef struct {
   p_info p;

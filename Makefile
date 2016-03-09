@@ -3,16 +3,16 @@ all: wallworlds
 wallworlds: obj/main.o obj/engine.o obj/input.o obj/render.o
 	gcc -Wall main.c engine.c input.c render.c -o wallworlds -lncurses -lm
 
-obj/main.o: src/../main.c
+obj/main.o:
 	gcc -c -o obj/main.o
 
-obj/engine.o: src/../engine.c
+obj/engine.o:
 	gcc -c -o obj/engine.o
 
-obj/input.o: src/../input.c
+obj/input.o:
 	gcc -c -o obj/input.o
 
-obj/render.o: src/../render.c
+obj/render.o:
 	gcc -c -o obj/render.o
 
 clean:

@@ -16,4 +16,4 @@ obj/render.o: src/render.c
 	gcc -c -o obj/render.o
 
 clean:
- 	rm obj/*.o wallworlds
+	rm obj/*.o wallworlds

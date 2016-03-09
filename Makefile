@@ -6,9 +6,7 @@ wallworlds: obj/main.o obj/engine.o obj/input.o obj/render.o
 	gcc -Wall main.c engine.c input.c render.c -o wallworlds -lncurses -lm
 
 obj/main.o:
-	if [ ! -d obj ]; then
 	mkdir obj
-	fi
 	gcc -c -o main.c obj/main.o
 
 obj/engine.o:

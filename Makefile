@@ -7,16 +7,16 @@ wallworlds: obj/main.o obj/engine.o obj/input.o obj/render.o
 
 obj/main.o:
 	mkdir obj
-	gcc -c -o main.c obj/main.o
+	gcc -c main.c -o obj/main.o
 
 obj/engine.o:
-	gcc -c -o engine.c obj/engine.o
+	gcc -c engine.c -o obj/engine.o
 
 obj/input.o:
-	gcc -c -o input.c obj/input.o
+	gcc -c input.c -o obj/input.o
 
 obj/render.o:
-	gcc -c -o render.c obj/render.o
+	gcc -c render.c -o obj/render.o
 
 clean:
 	rm obj/*.o wallworlds

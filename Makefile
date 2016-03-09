@@ -1,3 +1,5 @@
+.PHONY: all clean
+
 all: wallworlds
 
 wallworlds: obj/main.o obj/engine.o obj/input.o obj/render.o

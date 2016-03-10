@@ -31,3 +31,8 @@ wallworlds
 
 # Debug files
 *.dSYM/
+
+# Emacs recovery files
+*~
+[#]*[#]
+.\#*

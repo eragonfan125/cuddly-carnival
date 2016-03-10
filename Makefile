@@ -6,7 +6,7 @@ wallworlds: obj/main.o obj/engine.o obj/input.o obj/render.o
 	gcc -Wall main.c engine.c input.c render.c -o wallworlds -lncurses -lm
 
 obj/main.o:
-	mkdir obj
+	mkdir -p obj
 	gcc -c main.c -o obj/main.o
 
 obj/engine.o:

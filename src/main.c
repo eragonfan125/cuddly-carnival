@@ -26,8 +26,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 int main() {
   alls all = {
-    {0,1,1, 10, 0.01},
-    {(double)(4/5*M_PI),(double)(M_PI/180)},
+    {0, 1, 1, 10, 0.01},
+    {M_PI, M_PI},
     {LINES, COLS, 1,
       {
         {1, 1, 1, 1, 1},

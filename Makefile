@@ -1,4 +1,4 @@
-.PHONY: all clean
+.PHONY: all clean install
 
 all: wallworlds
 
@@ -20,3 +20,6 @@ obj/render.o:
 
 clean:
 	rm obj/*.o wallworlds
+
+install:
+	echo "Sorry can't do that yet :("

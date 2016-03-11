@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "render.h"
 #include "input.h"
 
-void printcol(alls *all, int col, int len) {
+/*void printcol(alls *all, int col, int len) {
   int r = all->rn.rows;
   for (; r >= (int)((all->rn.rows - len)/2); --r)
     mvaddch(r, col, '.');
@@ -33,7 +33,7 @@ void printcol(alls *all, int col, int len) {
     mvaddch(r, col, 'W');
   for (; all->rn.rows >= 0; --r)
     mvaddch(r, col, '.');
-}
+}*/
 
 void render2d(alls *all) {
   double r_A;// = all->p.p_A - all->s.p_FOV / 2;
@@ -65,7 +65,8 @@ void render2d(alls *all) {
       //create a col
       int h = (int) ((1 / pow(rdist, 2)) * all->rn.rows);
       int f = (all->rn.rows - h) / 2;
-      for (int ir = 0; ir < all->rn.rows; ir++) {
+      int ir;
+      for (ir = 0; ir < all->rn.rows; ir++) {
         if ((ir < f) || (ir > (f + h)) || rstatus == -1)
 	  mvaddch(ir, i, ' ');
 	else

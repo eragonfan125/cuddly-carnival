@@ -26,13 +26,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 int main() {
   alls all = {
-    {0, 1, 1, 10, 0.01},
-    {M_PI, M_PI/180},
+    {0,2,2, 10, 0.3},
+    {2, (double)(M_PI/60)},
     {LINES, COLS, 1,
       {
         {1, 1, 1, 1, 1},
-        {1, 0, 0, 1, 1},
-        {1, 1, 0, 0, 1},
+        {1, 0, 0, 0, 1},
+        {1, 0, 0, 0, 1},
         {1, 0, 0, 0, 1},
         {1, 1, 1, 1, 1}
       }

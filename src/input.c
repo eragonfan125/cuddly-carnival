@@ -48,5 +48,5 @@ int p_gameinput(alls *all) {
       refresh = 0;
       break;
   }
-  return 1;
+  return refresh;
 }
